@@ -1,0 +1,9 @@
+version: "2.1"
+
+services:
+    backend_service_template:
+        build: .
+        env_file:
+            - local.env
+        ports:
+            - "8000:8000"
